@@ -104,6 +104,10 @@ header {
   padding: 1.85rem 3rem;
   border-radius: 10rem;
   border: 0.2rem solid #f9f8ff;
+  transition: transform 1s;
+}
+.btn:hover {
+  transform: scale(1.15);
 }
 
 .icon-logo:hover {
