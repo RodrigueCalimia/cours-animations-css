@@ -10,12 +10,12 @@ em {
 
 h1 {
   font-size: $font-size-title;
-  color: $color-primary;
   font-family: $font-family-title;
 }
 
 h2 {
-  color: $color-light;
+  font-size: $font-size-title-h2;
+  font-family: $font-family-title;
 }
 
 p,

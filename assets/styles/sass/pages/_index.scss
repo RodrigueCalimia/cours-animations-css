@@ -1,15 +1,11 @@
 .section-hero {
   @include dp-flex;
   @include el-center;
-  h1 {
-    margin: 40px;
-  }
 }
 
 .section-content {
   padding: 80px;
   @include dp-flex;
   @include el-center;
-  @include dir-col-reverse;
-
+  @include dir-col;
 }

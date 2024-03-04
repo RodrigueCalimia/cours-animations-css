@@ -10,8 +10,15 @@ body{
   background-color: $color-black;
   margin: auto;
 }
+
+h1 {
+  color: $color-primary;
+  margin: 40px;
+}
+
 h2 {
-  margin-bottom: 80px;
+  color: $color-secondary;
+  margin-bottom: 40px;
 }
 
 h1,

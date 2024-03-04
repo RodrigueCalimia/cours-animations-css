@@ -13,8 +13,14 @@ body {
   margin: auto;
 }
 
+h1 {
+  color: #7324C5;
+  margin: 40px;
+}
+
 h2 {
-  margin-bottom: 80px;
+  color: #513FD1;
+  margin-bottom: 40px;
 }
 
 h1,
@@ -38,12 +44,12 @@ em {
 
 h1 {
   font-size: 3.5em;
-  color: #7324C5;
   font-family: "Montserrat", sans-serif;
 }
 
 h2 {
-  color: #f9f8ff;
+  font-size: 2.5em;
+  font-family: "Montserrat", sans-serif;
 }
 
 p,
@@ -67,16 +73,13 @@ header {
   align-items: center;
   justify-content: center;
 }
-.section-hero h1 {
-  margin: 40px;
-}
 
 .section-content {
   padding: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column-reverse;
+  flex-direction: column;
 }
 
 .navbar {
