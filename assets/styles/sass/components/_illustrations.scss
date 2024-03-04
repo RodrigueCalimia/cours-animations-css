@@ -15,5 +15,9 @@
         height: 50px;
         width: 50px;
         background: $color-primary-hover;
+        transition: transform 1s linear;
+    }
+    &:hover .box__content {
+        transform: translateX(500px);
     }
 }

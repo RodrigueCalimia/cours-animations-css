@@ -175,6 +175,10 @@ header {
   height: 50px;
   width: 50px;
   background: #DD3DFF;
+  transition: transform 1s linear;
+}
+.box:hover .box__content {
+  transform: translateX(500px);
 }
 
 footer {
