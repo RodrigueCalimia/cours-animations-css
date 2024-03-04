@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1440px;
+  background-color: #242424;
+  margin: auto;
+}
+
+h2 {
+  margin-bottom: 80px;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 1em;
+}
+
+em {
+  color: #7324C5;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 3.5em;
+  color: #7324C5;
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  color: #f9f8ff;
+}
+
+p,
+li {
+  font-size: 2em;
+  color: #f9f8ff;
+}
+
+header {
+  background-color: white;
+  padding: 20px 50px;
+}
+@media screen and (max-width: 996px) {
+  header {
+    padding: 20px 20px;
+  }
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 996px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar img {
+    margin-bottom: 20px;
+  }
+}
+.navbar__link {
+  margin-left: 30px;
+  color: #513FD1;
+  text-decoration: none;
+}
+@media screen and (max-width: 996px) {
+  .navbar__link {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+.navbar__link--purple {
+  color: #7324C5;
+}
+.navbar__link-logo {
+  margin-left: 30px;
+}
+
+.icon-logo:hover {
+  opacity: 0.5;
+}
+
+.section-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-hero h1 {
+  margin: 40px;
+}
+@media screen and (max-width: 996px) {
+  .section-hero {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .section-hero div {
+    padding-right: 0;
+    text-align: center;
+    order: 2;
+  }
+}
+
+.section-content {
+  padding: 80px;
+}
+.section-content h2 {
+  color: #513FD1;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.section-content div {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 996px) {
+  .section-content {
+    padding: 20px;
+  }
+  .section-content div {
+    flex-direction: column;
+  }
+}
+
+footer {
+  background-color: white;
+  padding: 20px 50px;
+}
+@media screen and (max-width: 996px) {
+  footer {
+    padding: 20px 20px;
+  }
+}/*# sourceMappingURL=style.css.map */

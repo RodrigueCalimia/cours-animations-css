@@ -1,0 +1,40 @@
+.section-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    margin: 40px;
+  }
+  @media screen and (max-width: 996px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    div {
+      padding-right: 0;
+      text-align: center;
+      order: 2;
+    }
+  }
+}
+
+.section-content {
+  padding: 80px;
+  h2 {
+    color: $color-secondary;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  div {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  @media screen and (max-width: 996px) {
+    padding: 20px;
+    div {
+      flex-direction: column;
+    }
+  }
+}
