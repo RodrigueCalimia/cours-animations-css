@@ -8,3 +8,6 @@
 @mixin dir-col {
   flex-direction: column;
 }
+@mixin dir-col-reverse {
+  flex-direction: column-reverse;
+}
