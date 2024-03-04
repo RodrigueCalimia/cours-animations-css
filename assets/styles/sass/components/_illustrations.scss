@@ -1,0 +1,7 @@
+.cercle{
+    width: $cercle-size;
+    height: $cercle-size;
+    background: $color-primary-hover;
+    margin-bottom: 2rem;
+    border-radius: $cercle-size * 0.5;
+}

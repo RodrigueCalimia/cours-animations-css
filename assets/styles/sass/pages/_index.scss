@@ -1,39 +1,15 @@
 .section-hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include dp-flex;
+  @include el-center;
   h1 {
     margin: 40px;
-  }
-  @media screen and (max-width: 996px) {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    div {
-      padding-right: 0;
-      text-align: center;
-      order: 2;
-    }
   }
 }
 
 .section-content {
-  display: flex;
-  justify-content: center;
   padding: 80px;
-  h2 {
-    color: $color-secondary;
-    text-align: center;
-    margin-bottom: 80px;
-  }
-  div {
-    display: flex;
-    justify-content: center;
-  }
-  @media screen and (max-width: 996px) {
-    padding: 20px;
-    div {
-      flex-direction: column;
-    }
-  }
+  @include dp-flex;
+  @include el-center;
+  @include dir-col;
+
 }
