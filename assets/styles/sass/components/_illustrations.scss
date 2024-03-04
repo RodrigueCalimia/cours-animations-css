@@ -4,4 +4,6 @@
     background: $color-primary-hover;
     margin-bottom: 2rem;
     border-radius: $cercle-size * 0.5;
+    transform: scale(0.1);
+    transition: transform 4s;
 }
