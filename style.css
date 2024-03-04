@@ -96,6 +96,16 @@ header {
   margin-left: 30px;
 }
 
+.btn {
+  background: #DD3DFF;
+  color: #f9f8ff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 1.85rem 3rem;
+  border-radius: 10rem;
+  border: 0.2rem solid #f9f8ff;
+}
+
 .icon-logo:hover {
   opacity: 0.5;
 }
@@ -122,6 +132,8 @@ header {
 }
 
 .section-content {
+  display: flex;
+  justify-content: center;
   padding: 80px;
 }
 .section-content h2 {
@@ -132,9 +144,7 @@ header {
 .section-content div {
   display: flex;
   flex-direction: row;
-  gap: 15px;
   justify-content: center;
-  margin-bottom: 15px;
 }
 @media screen and (max-width: 996px) {
   .section-content {

@@ -18,6 +18,8 @@
 }
 
 .section-content {
+  display: flex;
+  justify-content: center;
   padding: 80px;
   h2 {
     color: $color-secondary;
@@ -27,9 +29,7 @@
   div {
     display: flex;
     flex-direction: row;
-    gap: 15px;
     justify-content: center;
-    margin-bottom: 15px;
   }
   @media screen and (max-width: 996px) {
     padding: 20px;
