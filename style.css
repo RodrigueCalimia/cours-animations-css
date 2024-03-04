@@ -174,6 +174,8 @@ header {
 .box__content {
   height: 50px;
   width: 50px;
+}
+.box__content--anim-linear {
   background: #DD3DFF;
   transition: transform 1s linear;
 }
