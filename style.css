@@ -96,6 +96,27 @@ header {
   margin-left: 30px;
 }
 
+.form__group {
+  flex-direction: column;
+  color: #DD3DFF;
+}
+.form__group input {
+  border: 2px solid white;
+  border-radius: 100rem;
+  color: #7324C5;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  outline: none;
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+}
+.form__group input:focus {
+  border: 2px solid #DD3DFF;
+}
+.form__group label {
+  margin-left: 30px;
+}
+
 .btn {
   background: #DD3DFF;
   color: #f9f8ff;
@@ -147,7 +168,6 @@ header {
 }
 .section-content div {
   display: flex;
-  flex-direction: row;
   justify-content: center;
 }
 @media screen and (max-width: 996px) {
