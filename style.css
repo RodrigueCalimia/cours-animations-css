@@ -166,6 +166,17 @@ header {
   transition: transform 4s;
 }
 
+.box {
+  padding: 10px;
+  border: 1px solid white;
+  width: 550px;
+}
+.box__content {
+  height: 50px;
+  width: 50px;
+  background: #DD3DFF;
+}
+
 footer {
   background-color: white;
   padding: 20px 50px;
