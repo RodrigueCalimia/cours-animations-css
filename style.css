@@ -20,7 +20,7 @@ h1 {
 
 h2 {
   color: #513FD1;
-  margin-bottom: 40px;
+  margin: 40px;
 }
 
 h1,
@@ -54,7 +54,7 @@ h2 {
 
 p,
 li {
-  font-size: 2em;
+  font-size: 1.5em;
   color: #f9f8ff;
 }
 
@@ -75,7 +75,7 @@ header {
 }
 
 .section-content {
-  padding: 80px;
+  padding: 40px 80px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -150,9 +150,14 @@ header {
   padding: 1.85rem 3rem;
   border-radius: 10rem;
   border: 0.2rem solid #f9f8ff;
+  margin-top: 40px;
 }
 .btn:active + .cercle {
   transform: scale(1.15);
+}
+
+.btn-anim-all:hover .box__content {
+  transform: translateX(500px);
 }
 
 .icon-logo:hover {
@@ -177,10 +182,22 @@ header {
 .box__content {
   height: 50px;
   width: 50px;
+  background: #DD3DFF;
 }
 .box__content--anim-linear {
-  background: #DD3DFF;
   transition: transform 1s linear;
+}
+.box__content--anim-ease-in-out {
+  transition: transform 1s ease-in-out;
+}
+.box__content--anim-ease-in {
+  transition: transform 1s ease-in;
+}
+.box__content--anim-ease-out {
+  transition: transform 1s ease-out;
+}
+.box__content--anim-ease {
+  transition: transform 1s;
 }
 .box:hover .box__content {
   transform: translateX(500px);

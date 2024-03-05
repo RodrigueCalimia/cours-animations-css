@@ -14,9 +14,21 @@
     &__content {
         height: 50px;
         width: 50px;
+        background: $color-primary-hover;
         &--anim-linear {
-            background: $color-primary-hover;
             transition: transform 1s linear;
+        }
+        &--anim-ease-in-out {
+            transition: transform 1s ease-in-out;
+        }
+        &--anim-ease-in {
+            transition: transform 1s ease-in;
+        }
+        &--anim-ease-out {
+            transition: transform 1s ease-out;
+        }
+        &--anim-ease {
+            transition: transform 1s;
         }
     }
     &:hover .box__content {
