@@ -76,10 +76,19 @@ header {
 
 .section-content {
   padding: 40px 80px;
+}
+
+.anim {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+.anim__cubic-bezier {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
 }
 
 .navbar {
@@ -153,11 +162,7 @@ header {
   margin-top: 40px;
 }
 .btn:active + .cercle {
-  transform: scale(1.15);
-}
-
-.btn-anim-all:hover .box__content {
-  transform: translateX(500px);
+  transform: translateY(-350px);
 }
 
 .icon-logo:hover {
@@ -165,12 +170,11 @@ header {
 }
 
 .cercle {
-  width: 150px;
-  height: 150px;
+  width: 50px;
+  height: 50px;
   background: #DD3DFF;
-  margin-bottom: 2rem;
-  border-radius: 75px;
-  transform: scale(0.1);
+  border-radius: 25px;
+  transform: translateY(0);
   transition: transform 4s;
 }
 
@@ -201,6 +205,15 @@ header {
 }
 .box:hover .box__content {
   transform: translateX(500px);
+}
+
+.tube {
+  position: relative;
+  top: 50px;
+  width: 50px;
+  height: 400px;
+  border: 1px solid white;
+  border-radius: 10rem;
 }
 
 footer {

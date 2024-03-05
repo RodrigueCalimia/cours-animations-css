@@ -8,11 +8,6 @@
     border: 0.2rem solid $color-light;
     margin-top: 40px;
     &:active + .cercle {
-        transform: scale(1.15);
-    }
-}
-.btn-anim-all {
-    &:hover .box__content {
-        transform: translateX(500px);
+        transform: translateY(-350px);
     }
 }
