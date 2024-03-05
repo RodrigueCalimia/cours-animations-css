@@ -8,6 +8,6 @@
     border: 0.2rem solid $color-light;
     margin-top: 40px;
     &:hover + .box {
-        transform: scale(2);
+        transform: scale(3, 0.5);
     }
 }  
