@@ -175,7 +175,7 @@ header {
   background: #DD3DFF;
   border-radius: 25px;
   transform: translateY(0);
-  transition: transform 4s;
+  transition: transform 4s cubic-bezier(0, 0.75, 0.08, 1);
 }
 
 .box {

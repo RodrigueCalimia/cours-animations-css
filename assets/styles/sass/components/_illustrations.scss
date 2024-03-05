@@ -4,7 +4,7 @@
     background: $color-primary-hover;
     border-radius: $cercle-size * 0.5;
     transform: translateY(0);
-    transition: transform 4s;
+    transition: transform 4s cubic-bezier(0,.75,.08,1);
 }
 .box {
     padding: 10px;
