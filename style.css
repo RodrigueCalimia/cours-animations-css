@@ -84,11 +84,15 @@ header {
   justify-content: center;
   flex-direction: column;
 }
-.anim__cubic-bezier {
+.anim__combine {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column-reverse;
+}
+
+span {
+  color: #f9f8ff;
 }
 
 .navbar {
@@ -162,7 +166,10 @@ header {
   margin-top: 40px;
 }
 .btn:hover + .box {
-  transform: translate(100%, 0);
+  transform: scale(1);
+}
+.btn:hover + .box span {
+  transform: translateY(0);
 }
 
 .icon-logo:hover {
@@ -174,7 +181,17 @@ header {
   width: 100px;
   height: 100px;
   background: #38761d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0.1);
   transition: transform 330ms ease-in-out;
+  overflow: hidden;
+}
+.box span {
+  display: inline-block;
+  transform: translateY(250%);
+  transition: transform 280ms ease-out 50ms;
 }
 
 footer {

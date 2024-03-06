@@ -8,6 +8,9 @@
     border: 0.2rem solid $color-light;
     margin-top: 40px;
     &:hover + .box {
-        transform: translate(100%, 0);
+        transform: scale(1);
+        span{
+            transform: translateY(0);
+        }
     }
-} 
+}

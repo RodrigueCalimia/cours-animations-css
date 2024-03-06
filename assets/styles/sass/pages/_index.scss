@@ -11,9 +11,12 @@
   @include dp-flex;
   @include el-center;
   @include dir-col;
-  &__cubic-bezier {
+  &__combine {
     @include dp-flex;
     @include el-center;
     @include dir-col-reverse;
   }
+}
+span{
+  color: $color-light;
 }
