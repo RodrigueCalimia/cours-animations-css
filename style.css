@@ -162,7 +162,7 @@ header {
   margin-top: 40px;
 }
 .btn:hover + .box {
-  transform: translate(150px, -7vh);
+  transform: translate(100%, 0);
 }
 
 .icon-logo:hover {
