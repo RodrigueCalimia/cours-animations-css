@@ -9,7 +9,7 @@ body {
 
 .container {
   max-width: 1440px;
-  background-color: #242424;
+  background-color: #f9f8ff;
   margin: auto;
 }
 
@@ -168,38 +168,34 @@ span {
   border: 0.2rem solid #f9f8ff;
   margin-top: 40px;
 }
-.btn:hover + .boxes > .boxes--rotDegrees {
-  transform: rotate(0deg);
+.btn:hover + .box {
+  transform: scale(1) rotate(0deg);
 }
-.btn:hover + .boxes > .boxes--rotTurns {
-  transform: rotate(0turn);
+.btn:hover + .box span {
+  transform: translateY(0);
 }
 
 .icon-logo:hover {
   opacity: 0.5;
 }
 
-.boxes {
-  display: flex;
-}
-.boxes__base {
+.box {
   width: 140px;
   height: 140px;
   color: #f9f8ff;
   margin: 40px;
+  background: #38761d;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  transform: scale(0.1) rotate(-90deg);
+  transition: transform 330ms ease-in-out;
 }
-.boxes--rotDegrees {
-  background: #38761d;
-  transform: rotate(-360deg);
-  transition: transform 500ms ease-in-out;
-}
-.boxes--rotTurns {
-  background: #2769F2;
-  transform: rotate(-1turn);
-  transition: transform 500ms ease-in-out;
+.box span {
+  display: inline-block;
+  transform: translateY(400%);
+  transition: transform 280ms ease-out 50ms;
 }
 
 footer {
