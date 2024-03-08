@@ -1,21 +1,20 @@
 .boxes {
     @include dp-flex;
+    @include dir-col;
     &__base{
-        width: 140px;
-        height: 140px;
+        width: 120px;
+        height: 120px;
         color: $color-light;
-        margin: 40px;
+        margin: 20px;
         @include el-center;
     }
-    &--rotDegrees {
+    &--transxScale {
         background: $color-confirm;
-        transform: rotate(-360deg);
         transition: transform 500ms ease-in-out;
     }
 
-    &--rotTurns {
+    &--scaleTransx {
         background: $color-info;
-        transform: rotate(-1turn);
         transition: transform 500ms ease-in-out;
     }
 }

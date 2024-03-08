@@ -8,12 +8,8 @@
 }
 
 .anim {
-  @include dp-flex;
-  @include el-center;
-  @include dir-col;
   &__container {
     @include dp-flex;
-    @include el-center;
     @include dir-col-reverse;
   }
 }
