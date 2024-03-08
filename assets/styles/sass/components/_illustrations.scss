@@ -1,16 +1,21 @@
-.box {
-    padding: 10px;
-    width: 100px;
-    height: 100px;
-    background: $color-confirm;
+.boxes {
     @include dp-flex;
-    @include el-center;
-    transform: scale(0.1);
-    transition: transform 330ms ease-in-out;
-    overflow: hidden;
-    span {
-        display: inline-block;
-        transform: translateY(250%);
-        transition: transform 280ms ease-out 50ms;
+    &__base{
+        width: 140px;
+        height: 140px;
+        color: $color-light;
+        margin: 40px;
+        @include el-center;
+    }
+    &--rotDegrees {
+        background: $color-confirm;
+        transform: rotate(-360deg);
+        transition: transform 500ms ease-in-out;
+    }
+
+    &--rotTurns {
+        background: $color-info;
+        transform: rotate(-1turn);
+        transition: transform 500ms ease-in-out;
     }
 }

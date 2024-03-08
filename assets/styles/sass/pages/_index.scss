@@ -11,7 +11,7 @@
   @include dp-flex;
   @include el-center;
   @include dir-col;
-  &__combine {
+  &__container {
     @include dp-flex;
     @include el-center;
     @include dir-col-reverse;

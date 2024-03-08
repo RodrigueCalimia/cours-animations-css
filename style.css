@@ -70,6 +70,7 @@ header {
 
 .section-hero {
   display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -80,11 +81,13 @@ header {
 
 .anim {
   display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.anim__combine {
+.anim__container {
+  display: flex;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -165,33 +168,38 @@ span {
   border: 0.2rem solid #f9f8ff;
   margin-top: 40px;
 }
-.btn:hover + .box {
-  transform: scale(1);
+.btn:hover + .boxes > .boxes--rotDegrees {
+  transform: rotate(0deg);
 }
-.btn:hover + .box span {
-  transform: translateY(0);
+.btn:hover + .boxes > .boxes--rotTurns {
+  transform: rotate(0turn);
 }
 
 .icon-logo:hover {
   opacity: 0.5;
 }
 
-.box {
-  padding: 10px;
-  width: 100px;
-  height: 100px;
-  background: #38761d;
+.boxes {
+  display: flex;
+}
+.boxes__base {
+  width: 140px;
+  height: 140px;
+  color: #f9f8ff;
+  margin: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: scale(0.1);
-  transition: transform 330ms ease-in-out;
-  overflow: hidden;
 }
-.box span {
-  display: inline-block;
-  transform: translateY(250%);
-  transition: transform 280ms ease-out 50ms;
+.boxes--rotDegrees {
+  background: #38761d;
+  transform: rotate(-360deg);
+  transition: transform 500ms ease-in-out;
+}
+.boxes--rotTurns {
+  background: #2769F2;
+  transform: rotate(-1turn);
+  transition: transform 500ms ease-in-out;
 }
 
 footer {
