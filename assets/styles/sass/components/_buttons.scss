@@ -9,11 +9,14 @@
     margin-top: 40px;
     width: 250px;
     &:hover + .boxes {
-        & > .boxes--transxScale {
-            transform: translateX(200%) scale(2);
+        & > .boxes__content > .boxes--skewX {
+            transform: skewX(45deg);
         }
-        & > .boxes--scaleTransx {
-             transform: scale(2) translateX(200%);
+        & > .boxes__content > .boxes--skewY {
+             transform: skewY(45deg);
+        }
+        & > .boxes__content > .boxes--skew {
+             transform: skew(40deg, 40deg);
         }
     }
 }

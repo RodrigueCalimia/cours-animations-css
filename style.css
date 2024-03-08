@@ -82,6 +82,10 @@ header {
 
 .anim__container {
   display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   flex-direction: column-reverse;
 }
 
@@ -160,11 +164,14 @@ span {
   margin-top: 40px;
   width: 250px;
 }
-.btn:hover + .boxes > .boxes--transxScale {
-  transform: translateX(200%) scale(2);
+.btn:hover + .boxes > .boxes__content > .boxes--skewX {
+  transform: skewX(45deg);
 }
-.btn:hover + .boxes > .boxes--scaleTransx {
-  transform: scale(2) translateX(200%);
+.btn:hover + .boxes > .boxes__content > .boxes--skewY {
+  transform: skewY(45deg);
+}
+.btn:hover + .boxes > .boxes__content > .boxes--skew {
+  transform: skew(40deg, 40deg);
 }
 
 .icon-logo:hover {
@@ -173,6 +180,13 @@ span {
 
 .boxes {
   display: flex;
+}
+.boxes__content {
+  margin: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   flex-direction: column;
 }
 .boxes__base {
@@ -184,14 +198,16 @@ span {
   align-items: center;
   justify-content: center;
   text-align: center;
-}
-.boxes--transxScale {
-  background: #38761d;
-  transition: transform 500ms ease-in-out;
-}
-.boxes--scaleTransx {
   background: #2769F2;
-  transition: transform 500ms ease-in-out;
+}
+.boxes--skewX {
+  transform: skewX(0deg);
+}
+.boxes--skewY {
+  transform: skewY(0deg);
+}
+.boxes--skew {
+  transform: skew(0deg, 0deg);
 }
 
 footer {
