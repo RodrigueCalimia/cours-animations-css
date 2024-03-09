@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
 }
@@ -182,12 +181,6 @@ span {
 .progress__bar {
   background-color: #DD3DFF;
   height: 50px;
-  /* la progress barre est vide */
-  transform: scaleX(0);
-  /* la progress barre se rempli mais à partir du milieu */
-  transition: transform 1000ms;
-  /* le point d'ancrage est déplacé sur le bord gauche de la barre */
-  transform-origin: 0%;
 }
 
 footer {
