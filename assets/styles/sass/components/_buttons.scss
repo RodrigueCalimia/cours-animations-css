@@ -8,15 +8,12 @@
     border: 0.2rem solid $color-light;
     margin-top: 40px;
     width: 250px;
-    &:hover + .boxes {
-        & > .boxes__content > .boxes--skewX {
-            transform: skewX(45deg);
-        }
-        & > .boxes__content > .boxes--skewY {
-             transform: skewY(45deg);
-        }
-        & > .boxes__content > .boxes--skew {
-             transform: skew(40deg, 40deg);
+    &:active {
+        & + .progress {
+            & > .progress__bar {
+                /* la progress bar est remplie à 100% */
+                transform: scaleX(1);
+            }
         }
     }
 }

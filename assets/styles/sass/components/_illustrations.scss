@@ -1,25 +1,17 @@
-.boxes {
-    @include dp-flex;
-    &__content{
-        margin: 40px;
-        @include el-center;
-        @include dir-col;
-    }
-    &__base{
-        width: 120px;
-        height: 120px;
-        color: $color-light;
-        margin: 20px;
-        @include el-center;
-        background: $color-info;
-    }
-    &--skewX {
-        transform: skewX(0deg);
-    }
-    &--skewY {
-        transform: skewY(0deg);
-    }
-    &--skew {
-        transform: skew(0deg, 0deg);
+.progress {
+    color: $color-light;
+    border: 0.2rem solid $color-light;
+    padding: 5px;
+    width: 500px;
+    &__bar {
+        background-color: $color-primary-hover;
+        height: 50px;
+        /* la progress barre est vide */
+        transform: scaleX(0);
+        /* la progress barre se rempli mais à partir du milieu */
+        transition: transform 1000ms;
+        /* le point d'ancrage est déplacé sur le bord gauche de la barre */
+        transform-origin: 0%;
     }
 }
+

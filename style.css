@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
 }
@@ -164,50 +165,30 @@ span {
   margin-top: 40px;
   width: 250px;
 }
-.btn:hover + .boxes > .boxes__content > .boxes--skewX {
-  transform: skewX(45deg);
-}
-.btn:hover + .boxes > .boxes__content > .boxes--skewY {
-  transform: skewY(45deg);
-}
-.btn:hover + .boxes > .boxes__content > .boxes--skew {
-  transform: skew(40deg, 40deg);
+.btn:active + .progress > .progress__bar {
+  /* la progress bar est remplie à 100% */
+  transform: scaleX(1);
 }
 
 .icon-logo:hover {
   opacity: 0.5;
 }
 
-.boxes {
-  display: flex;
-}
-.boxes__content {
-  margin: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-}
-.boxes__base {
-  width: 120px;
-  height: 120px;
+.progress {
   color: #f9f8ff;
-  margin: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background: #2769F2;
+  border: 0.2rem solid #f9f8ff;
+  padding: 5px;
+  width: 500px;
 }
-.boxes--skewX {
-  transform: skewX(0deg);
-}
-.boxes--skewY {
-  transform: skewY(0deg);
-}
-.boxes--skew {
-  transform: skew(0deg, 0deg);
+.progress__bar {
+  background-color: #DD3DFF;
+  height: 50px;
+  /* la progress barre est vide */
+  transform: scaleX(0);
+  /* la progress barre se rempli mais à partir du milieu */
+  transition: transform 1000ms;
+  /* le point d'ancrage est déplacé sur le bord gauche de la barre */
+  transform-origin: 0%;
 }
 
 footer {
