@@ -11,7 +11,6 @@
     &:active {
         & + .progress {
             & > .progress__bar {
-                transform: scaleX(1);
             }
         }
     }

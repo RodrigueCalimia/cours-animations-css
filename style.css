@@ -164,10 +164,6 @@ span {
   margin-top: 40px;
   width: 250px;
 }
-.btn:active + .progress > .progress__bar {
-  transform: scaleX(1);
-}
-
 .icon-logo:hover {
   opacity: 0.5;
 }
