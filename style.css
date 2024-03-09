@@ -177,6 +177,7 @@ span {
 .progress__bar {
   background-color: #DD3DFF;
   height: 50px;
+  transform: scaleX(0);
   transform-origin: 0%;
 }
 
