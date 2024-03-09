@@ -166,7 +166,6 @@ span {
   width: 250px;
 }
 .btn:active + .progress > .progress__bar {
-  /* la progress bar est remplie à 100% */
   transform: scaleX(1);
 }
 
